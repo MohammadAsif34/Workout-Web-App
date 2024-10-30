@@ -9,7 +9,7 @@ const Workouts = () => {
   // ./ada/
 
   const fetch = async () => {
-    const api = "http://localhost:8800/api/workouts";
+    const api = "https://workout-p1vk.onrender.com/api/workouts";
 
     try {
       const res = await window.fetch(api);

@@ -10,7 +10,7 @@ const WorkoutAdd = () => {
 
   const { register, handleSubmit, reset } = useForm();
   const formSubmit = async (data) => {
-    const api = "http://localhost:8800/api/create";
+    const api = "https://workout-p1vk.onrender.com/api/create";
     try {
       const res = await fetch(api, {
         method: "POST",

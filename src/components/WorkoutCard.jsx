@@ -6,11 +6,10 @@ const WorkoutCard = ({ id, title = "null", load = 0, reps = 0 }) => {
   const { theme, setRender } = useContext(workoutContext);
 
   const handleDelete = async (id) => {
-    const api = `http://localhost:8800/api/delete/${id}`;
+    const api = `https://workout-p1vk.onrender.com/api/delete/${id}`;
 
     try {
       const res = await fetch(api, { method: "DELETE" });
-      console.log(`wkrwkrwk:${api}${id}`);
 
       if (!res.ok) {
         console.log(`error while workout deleting ::: ${res.status}`);
